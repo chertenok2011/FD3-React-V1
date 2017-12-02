@@ -2,7 +2,7 @@
 <flex-config>
   <target-player>11.0</target-player>
   <benchmark>false</benchmark>
-  <compiler>
+  <compiler> 
     <define val="3">
       debug
     </define>
