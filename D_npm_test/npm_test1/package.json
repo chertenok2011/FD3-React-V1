@@ -1,0 +1,17 @@
+{
+  "name": "reacttest",
+  "version": "1.0.0",
+  "description": "npm test",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "test",
+    "react"
+  ],
+  "author": "Kate",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {}
+}
