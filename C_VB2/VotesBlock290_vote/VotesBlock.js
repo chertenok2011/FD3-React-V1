@@ -48,9 +48,13 @@
   render: function() {
 
     var answersCode=this.props.answers.map( v =>
-      React.createElement(VotesAnswer, {key:v.code,
-        text:v.text, count:v.count, code:v.code, 
-        freeanswer:v.freeanswer, freeanswertext:this.state.freeanswertext, 
+      React.createElement(VotesAnswer, {
+        key:v.code,
+        text:v.text, 
+        count:v.count, 
+        code:v.code, 
+        freeanswer:v.freeanswer, 
+        freeanswertext:this.state.freeanswertext, 
         cbSelected:this.answerSelected,
         cbFreeAnswerTextChanged:this.freeAnswerTextChanged,
         selectedAnswerCode:this.state.selectedAnswerCode,
@@ -62,7 +66,7 @@
       React.createElement(VotesQuestion, {question:this.props.question} ),
       React.DOM.div( {className:'Answers'}, answersCode ),
       ((this.state.workMode==1)&&this.state.selectedAnswerCode)
-        ?React.DOM.input( {type:'button',value:'проголосовать',onClick:this.vote} )
+        ?React.DOM.input( { type:'button', value:'проголосовать', onClick:this.vote} )
         :null
     );
 

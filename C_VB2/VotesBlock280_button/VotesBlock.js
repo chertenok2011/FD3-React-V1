@@ -40,11 +40,16 @@
   render: function() {
 
     var answersCode=this.props.answers.map( v =>
-      React.createElement(VotesAnswer, {key:v.code,
-        text:v.text, count:v.count, code:v.code, 
-        freeanswer:v.freeanswer, freeanswertext:this.state.freeanswertext, 
+      React.createElement(VotesAnswer, {
+        key:v.code,
+        text:v.text, 
+        count:v.count, 
+        code:v.code, 
+        freeanswer:v.freeanswer, 
+        freeanswertext:this.state.freeanswertext, 
         cbSelected:this.answerSelected,
-        cbFreeAnswerTextChanged:this.freeAnswerTextChanged,
+        cbFreeAnswerTextChanged:this.
+        freeAnswerTextChanged,
         selectedAnswerCode:this.state.selectedAnswerCode,
         workMode:this.props.workMode,
       })

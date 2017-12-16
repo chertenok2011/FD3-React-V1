@@ -18,10 +18,14 @@
   render: function() {
 
     var answersCode=this.props.answers.map( v =>
-      React.createElement(VotesAnswer, {key:v.code,
-        text:v.text, count:v.count, code:v.code, 
-        freeanswer:v.freeanswer, freeanswertext:"???",
-        workMode:this.props.workMode,
+      React.createElement(VotesAnswer, {
+        key:v.code,
+        text:v.text, 
+        count:v.count, 
+        code:v.code, 
+        freeanswer:v.freeanswer, 
+        freeanswertext:"???",
+        workMode: this.props.workMode,
       })
     );
     return React.DOM.div( {className:'VotesBlock'}, 
