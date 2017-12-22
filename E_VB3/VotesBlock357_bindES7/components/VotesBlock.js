@@ -46,7 +46,7 @@ class VotesBlock extends React.Component {
   freeAnswerTextChanged(fat) { 
     console.log('VotesBlock: текст свободного ответа изменён - '+fat); 
     this.setState( {freeanswertext:fat} );
-  }
+  } 
 
   render() {
 

@@ -28,7 +28,10 @@
     if ( this.props.workMode==1 ) {
       return React.DOM.div(null,
         React.DOM.label({className:'VotesBlockAnswer'},
-          React.DOM.input({type:'radio',value:this.props.code,name:'voteanswer',
+          React.DOM.input({
+            type:'radio',
+            value:this.props.code,
+            name:'voteanswer',
             checked:(this.props.selectedAnswerCode==this.props.code),
             onClick:this.answerClicked}),
           React.DOM.span(null,this.props.text),
