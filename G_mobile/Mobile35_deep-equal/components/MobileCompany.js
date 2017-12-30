@@ -13,7 +13,7 @@ class MobileCompany extends React.Component {
     clients:PropTypes.arrayOf(
       PropTypes.shape({
         id: PropTypes.number.isRequired,
-        fio: PropTypes.string.isRequired,
+        fio: PropTypes.string.isRequired, 
         balance: PropTypes.number.isRequired,
       })
     ),
