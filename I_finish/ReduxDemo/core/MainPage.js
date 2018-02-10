@@ -4,7 +4,10 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
+// main reduser
 import combinedReducer from './reducers.js';
+
+//component CounterButton
 import CounterButton from '../components/CounterButton/CounterButton';
 
 let store=createStore(combinedReducer);

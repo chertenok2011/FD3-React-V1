@@ -32,9 +32,7 @@ class MobileClient extends React.PureComponent {
         <span className='MobileClientFIO'>{this.state.info.fio}</span>
       </div>
     );
-
   }
-
 }
 
 export default MobileClient;

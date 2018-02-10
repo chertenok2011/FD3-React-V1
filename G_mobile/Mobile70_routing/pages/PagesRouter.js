@@ -10,7 +10,6 @@ import Page_Client from './Page_Client';
 class PagesRouter extends React.Component {
           
   render() {
-
     return (
       <div>
         <Route path="/" exact component={Page_About} />

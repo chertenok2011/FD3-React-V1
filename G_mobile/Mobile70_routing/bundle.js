@@ -23422,7 +23422,6 @@ var PagesRouter = function (_React$Component) {
   _createClass(PagesRouter, [{
     key: 'render',
     value: function render() {
-
       return _react2.default.createElement(
         'div',
         null,

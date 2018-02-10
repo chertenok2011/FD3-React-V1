@@ -33,7 +33,7 @@ class intCounterButton extends React.PureComponent {
     let counterValue=this.props.counterButton.counters[this.props.counterid];
 
     return (
-      <div className="CounterButton">
+      <div className="CounterButton"> 
         <input type='button' value='-' onClick={this.decCounter} />
         <span className="CounterButtonValue">{counterValue}</span>
         <input type='button' value='+' onClick={this.incCounter} />
